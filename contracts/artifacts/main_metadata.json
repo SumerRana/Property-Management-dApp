@@ -1,0 +1,163 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					},
+					{
+						"internalType": "enum main.PropertyType",
+						"name": "_propertyType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_size",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_currentOwner",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_currentOwnershipTransferDate",
+						"type": "string"
+					}
+				],
+				"name": "addProperty",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					}
+				],
+				"name": "getPropertByID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "PropertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Property_Type",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "size",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Owner",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "PurchasedOn",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_newOwner",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tranferDate",
+						"type": "string"
+					}
+				],
+				"name": "transferProperty",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Property.sol": "main"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Property.sol": {
+			"keccak256": "0x8661c5b43c9351c47f1a6e57570e354a91e0d63115ba6c2f9d330002319c403f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae89abda06b2569e884760c12b728f0686256e4eef3fdbdffe21fafa22d9edb4",
+				"dweb:/ipfs/QmNnfqabjxnMCXnnkkXb9oNuLET66y9Y4LgcPhHecbVpqm"
+			]
+		}
+	},
+	"version": 1
+}
